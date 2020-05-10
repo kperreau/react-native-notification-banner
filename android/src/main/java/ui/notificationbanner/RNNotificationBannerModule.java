@@ -98,6 +98,8 @@ public class RNNotificationBannerModule extends ReactContextBaseJavaModule {
     Alerter alerter = Alerter.create(getCurrentActivity());
       alerter = alerter.setTitle(title);
       alerter = alerter.setText(subTitle);
+      alerter = alerter.enableSwipeToDismiss();
+    
 
       if (iconDrawable != null && enableProgress == false) {
         alerter = alerter.setIcon(iconDrawable);
